@@ -44,7 +44,7 @@
             you make any room feel complete.
           </p>
         </section>
-        <article class="author-section">
+        <article id="author-section" class="author-section">
           <div class="author-section__image-container">
             <img
               class="author-section__profile-image"
@@ -57,24 +57,26 @@
             </p>
           </div>
           <img
+            id="share-icon"
             class="share-icon"
             src="./images/icon-share.svg"
             alt="Share icon"
           />
         </article>
         <!-- Active state -->
-        <article class="share-section-active">
+        <article id="share-section" class="share-section-active inactive">
           <p class="share-section__text">share</p>
           <div class="share-section__social-media-icons">
             <img src="./images/icon-facebook.svg" alt="Facebook icon" />
-            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-x-twitter fa-2xl"></i>
             <img src="./images/icon-pinterest.svg" alt="Pinterest icon" />
-            <img
-              class="share-icon share-icon--active-state"
-              src="./images/icon-share.svg"
-              alt="Share icon"
-            />
           </div>
+          <img
+            id="share-icon-active"
+            class="share-icon share-icon--active-state"
+            src="./images/icon-share-active.svg"
+            alt="Share icon"
+          />
         </article>
       </article>
     </div>
@@ -92,5 +94,6 @@
         <a href="https://github.com/jdrodriguez2707">Johan Rodriguez</a>.
       </span>
     </footer>
+    <script src="./main.js"></script>
   </body>
 </html>

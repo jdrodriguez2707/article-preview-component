@@ -26,7 +26,6 @@ body {
 .article-preview {
   display: flex;
   flex-direction: column;
-  padding-bottom: 20px;
   border-radius: 10px;
   overflow: hidden;
   background-color: var(--component-background-color);
@@ -53,6 +52,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
+  padding-bottom: 20px;
 }
 
 .author-section__image-container {
@@ -92,7 +92,35 @@ body {
 }
 
 .share-section-active {
-  display: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 24px;
+  background-color: var(--primary-font-color);
+}
+
+.share-section__text {
+  text-transform: uppercase;
+  font-size: var(--small-font-size);
+  color: var(--component-background-color);
+  font-weight: 100;
+  letter-spacing: 6px;
+}
+
+.share-section__social-media-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-right: 40px;
+}
+
+.fa-x-twitter {
+  margin-top: 3px;
+  color: var(--component-background-color);
+}
+
+.share-icon--active-state {
+  background-color: var(--secondary-font-color);
 }
 
 .attribution {
@@ -107,4 +135,8 @@ body {
 
 .attribution__my-github {
   display: block;
+}
+
+.inactive {
+  display: none;
 }

@@ -1,0 +1,23 @@
+:root {
+  --primary-background-color: hsl(212, 23%, 69%);
+  --component-background-color: hsl(210, 46%, 95%);
+  --primary-font-color: hsl(217, 19%, 35%);
+  --secondary-font-color: hsl(214, 17%, 51%);
+  --primary-font-size: 1.3rem;
+}
+
+.manrope-primary-font-family {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution__link {
+  color: hsl(228, 45%, 44%);
+}

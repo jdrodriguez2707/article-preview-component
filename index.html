@@ -3,69 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/763e17878c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Frontend Mentor | Article preview component</title>
-
-    <!-- Feel free to remove these styles or customize in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    <article class="article-preview">
-      <figure class="article-preview__image-container">
-        <img
-          class="article-preview__image"
-          src="./images/drawers.jpg"
-          alt="Drawers"
-        />
-      </figure>
-      <div class="article-preview__info">
-        <h2 class="article-preview__title">
-          Shift the overall look and feel by adding these wonderful touches to
-          furniture in your home
-        </h2>
-        <p class="article-preview__body">
-          Ever been in a room and felt like something was missing? Perhaps it
-          felt slightly bare and uninviting. I’ve got some simple tips to help
-          you make any room feel complete.
-        </p>
-      </div>
-      <article class="author-section">
-        <img
-          class="author-section__profile-image"
-          src="./images/avatar-michelle.jpg"
-          alt="Michelle avatar"
-        />
-        <p class="author-section__name">
-          Michelle Appleton
-          <span class="author-section__publication-date">28 Jun 2020</span>
-        </p>
-        <img
-          class="author-section__share-icon"
-          src="./images/icon-share.svg"
-          alt="Share icon"
-        />
+    <main class="main-container">
+      <article class="article-preview">
+        <figure class="article-preview__image-container">
+          <img
+            class="article-preview__image"
+            src="./images/drawers.jpg"
+            alt="Drawers"
+          />
+        </figure>
+        <section class="article-preview__info">
+          <h2 class="article-preview__title">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h2>
+          <p class="article-preview__body">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+        </section>
+        <article class="author-section">
+          <img
+            class="author-section__profile-image"
+            src="./images/avatar-michelle.jpg"
+            alt="Michelle avatar"
+          />
+          <p class="author-section__name">
+            Michelle Appleton
+            <span class="author-section__publication-date">28 Jun 2020</span>
+          </p>
+          <img
+            class="share-icon"
+            src="./images/icon-share.svg"
+            alt="Share icon"
+          />
+        </article>
+        <!-- Active state -->
+        <article class="share-section">
+          <p class="share-section__text">share</p>
+          <div class="share-section__social-media-icons">
+            <img src="./images/icon-facebook.svg" alt="Facebook icon" />
+            <i class="fa-brands fa-x-twitter"></i>
+            <img src="./images/icon-pinterest.svg" alt="Pinterest icon" />
+            <img
+              class="share-icon share-icon--active-state"
+              src="./images/icon-share.svg"
+              alt="Share icon"
+            />
+          </div>
+        </article>
       </article>
-    </article>
-
-    <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a
+        class="attribution__link"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+      >
+        Frontend Mentor </a
+      >. Coded by
+      <a href="https://github.com/jdrodriguez2707">Johan Rodriguez</a>.
+    </footer>
   </body>
 </html>

@@ -4,6 +4,7 @@ const shareSection = document.querySelector("#share-section");
 const shareIconActive = document.querySelector("#share-icon-active");
 
 shareIcon.addEventListener("touchstart", showShareSection);
+shareIcon.addEventListener("click", showShareSectionActive);
 shareIconActive.addEventListener("touchstart", showAuthorSection);
 
 function showShareSection() {
@@ -14,4 +15,8 @@ function showShareSection() {
 function showAuthorSection() {
   shareSection.classList.add("inactive");
   authorSection.classList.remove("inactive");
+}
+
+function showShareSectionActive() {
+  shareSection.classList.toggle("inactive");
 }

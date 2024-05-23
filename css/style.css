@@ -197,7 +197,6 @@ body {
   }
 
   .share-section-active {
-    display: flex;
     justify-content: center;
     position: absolute;
     right: -68px;

@@ -99,6 +99,7 @@ body {
 
 .share-section-active {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 17px 24px;
@@ -125,7 +126,8 @@ body {
   color: var(--component-background-color);
 }
 
-.share-icon--active-state {
+.share-icon--active-state,
+.share-icon-white--active-state {
   background-color: var(--secondary-font-color);
 }
 
@@ -211,6 +213,10 @@ body {
 
   .share-section__social-media-icons {
     margin: 0;
+  }
+
+  .share-section__social-media-icon {
+    cursor: pointer;
   }
 
   .share-icon--active-state {
